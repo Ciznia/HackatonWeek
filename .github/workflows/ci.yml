@@ -44,7 +44,6 @@ jobs:
         run: git push || echo "nothing to commit."
 
   sync_repository:
-    needs: [check_compilation, run_epitech_coding_style_checker, run_tests]
     if: ${{ !github.event.pull_request }}
     runs-on: ubuntu-latest
 
