@@ -25,7 +25,6 @@ class ApiController extends AbstractController
     {
         $employees = $this->doctrine->getRepository(Photo::class)->findAll();
         $data = [];
-        dump($employees);
         foreach ($employees as $employee) {
             $data[] = [
                 'id' => $employee->getId(),
@@ -38,7 +37,6 @@ class ApiController extends AbstractController
                 'photo_fun' => $employee->getPhotoFun(),
             ];
         }
-        dd($data);
         return new JsonResponse($data);
     }
 }
