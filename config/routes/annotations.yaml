@@ -1,0 +1,8 @@
+# config/routes/annotations.yaml
+controllers:
+  resource: ../../src/Controller/
+  type: annotation
+api_employees:
+  path: '/api/employees'
+  controller: App\Controller\ApiController::getEmployees
+  methods: ['GET']

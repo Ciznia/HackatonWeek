@@ -1,0 +1,4 @@
+api_employees:
+  path: '/api/employees'
+  controller: App\Controller\ApiController::getEmployees
+  methods: ['GET']
