@@ -1,0 +1,109 @@
+.navigation-bar {
+  padding: 1em;
+}
+
+.navbar {
+  background-color: #333;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 1.2em;
+
+  a {
+    color: white;
+    text-decoration: none;
+    padding: 1em;
+
+    &:hover, &:focus {
+      background-color: darkgray;
+    }
+  }
+
+  .subnav {
+    position: relative;
+
+    .subnavbtn {
+      border: none;
+      outline: none;
+      color: white;
+      padding: 1em;
+      background-color: inherit;
+      margin: 0;
+
+      &::after {
+        font-family: "Poppins";
+        content: " >";
+        color: yellow;
+      }
+
+      &:hover, &:focus-within {
+         background-color: darkgray;
+      }
+    }
+
+    &-content {
+      display: none;
+      position: absolute;
+      min-width: 100%;
+      white-space: nowrap;
+
+      flex-direction: column;
+      background-color: gray;
+      z-index: 1;
+
+      .subnav-content {
+        left: 100%;
+        top: 0;
+      }
+    }
+
+    &:hover, &:focus, &:focus-within {
+      background-color: gray;
+
+      & > .subnav-content {
+        display: flex;
+      }
+    }
+
+    &:focus-within {
+      background-color: darkgray;
+    }
+  }
+
+  .search-bar {
+    margin-left: auto;
+    margin-right: 2ch;
+  }
+
+  @media (max-width: 768px) {
+    padding: 0.5ch;
+
+    a {
+      padding: 0.5ch;
+    }
+
+    .subnav {
+      .subnavbtn {
+        padding: 0.5ch;
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    .navbar {
+      flex-direction: column;
+    }
+
+    .search-bar {
+      margin-left: 0;
+      margin-top: 1em;
+    }
+
+    .subnav {
+      .subnavbtn::after {
+        content: "";
+      }
+    }
+  }
+}
