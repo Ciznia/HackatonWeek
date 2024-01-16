@@ -8,6 +8,6 @@ services:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: photoapi
     ports:
-      - "3307:3306"
+      - "3306:3306"
     volumes:
       - ./data.sql:/docker-entrypoint-initdb.d/data.sql
