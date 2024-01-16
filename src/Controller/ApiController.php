@@ -9,7 +9,6 @@ use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\Routing\Annotation\Route;
 use symfony\bundle\frameworkbundle\controller\controller;
 use App\Entity\Photo;
-
 class ApiController extends AbstractController
 {
 
@@ -26,7 +25,7 @@ class ApiController extends AbstractController
     {
         $employees = $this->doctrine->getRepository(Photo::class)->findAll();
         $data = [];
-
+        dump($employees);
         foreach ($employees as $employee) {
             $data[] = [
                 'id' => $employee->getId(),
@@ -39,7 +38,7 @@ class ApiController extends AbstractController
                 'photo_fun' => $employee->getPhotoFun(),
             ];
         }
-
+        dd($data);
         return new JsonResponse($data);
     }
 }
