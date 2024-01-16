@@ -11,9 +11,11 @@
       with import nixpkgs { inherit system; }; {
         devShell = mkShell {
           packages = [
-            mysql
             php
             symfony-cli
+
+            nodejs_21
+            mysql80
           ];
         };
       });
