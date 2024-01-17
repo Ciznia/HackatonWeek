@@ -36,7 +36,7 @@ export const HandleNewPageForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault() 
     
-    APIReq.json("/pages/create", "POST", formBody)
+    APIReq.json("http://127.0.0.1:8000/pages/create", "POST", formBody)
       .then(() => {
         const timeOut = setTimeout(() => {
           window.location.href = "/admin/pageEditor/";
@@ -89,20 +89,10 @@ export const EmployeeEditor = () => {
   const [EmployeeList, setEmployeeList] = useState([]);
   
   useEffect(() => {
-    APIReq.withoutBody("/pages/list", "GET")
+    APIReq.withoutBody("http://127.0.0.1:8000/api/employees", "GET")
       .then((res) => {
-        const EmployeeList =
-          res.data.map((page) => {
-            return {
-              blocks: [...page.blocks],
-              page: {
-                ...page.page,
-                dynamic: true,
-              }
-            }
-          })
-        setEmployeeList(EmployeeList.reverse());
-        })
+        setEmployeeList(res.data);
+      })
       .catch((err) => {
         console.error(err);
       });
