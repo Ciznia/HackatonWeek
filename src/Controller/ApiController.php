@@ -3,19 +3,22 @@
 
 namespace App\Controller;
 
+use Doctrine\ORM\EntityManagerInterface;
 use Doctrine\Persistence\ManagerRegistry;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\Routing\Annotation\Route;
 use symfony\bundle\frameworkbundle\controller\controller;
 use App\Entity\Photo;
+use Symfony\Component\HttpFoundation\Request;
+
 class ApiController extends AbstractController
 {
 
-    private $doctrine;
-    public function __construct(ManagerRegistry $doctrine)
+    private $entityManager;
+    public function __construct(EntityManagerInterface $entityManager)
     {
-        $this->doctrine = $doctrine;
+        $this->entityManager = $entityManager;
     }
 
     /**
@@ -23,7 +26,7 @@ class ApiController extends AbstractController
      */
     public function getEmployees()
     {
-        $employees = $this->doctrine->getRepository(Photo::class)->findAll();
+        $employees = $this->entityManager->getRepository(Photo::class)->findAll();
         $data = [];
         foreach ($employees as $employee) {
             $data[] = [
@@ -38,6 +41,39 @@ class ApiController extends AbstractController
             ];
         }
         return new JsonResponse($data);
+    }
+
+    /**
+     * @Route("/api/update-employee/{id}", name="api_update_employee", methods={"GET"})
+     */
+    public function updateEmployee(Request $request, $id)
+    {
+        dd($id);
+        // Récupérer l'employé à mettre à jour
+        $employee = $this->entityManager->getRepository(Photo::class)->find($id);
+
+        dd($employee);
+        if (!$employee) {
+            throw $this->createNotFoundException('Employee not found');
+        }
+
+        // Récupérer les nouvelles valeurs depuis le formulaire
+        $columnName = $request->request->get('column');
+        $newValue = $request->request->get('value');
+
+        // Vérifier que la colonne spécifiée existe dans l'entité
+        if (property_exists($employee, $columnName)) {
+            // Mettre à jour l'entité avec la nouvelle valeur
+            $setterMethod = 'set' . ucfirst($columnName);
+            $employee->$setterMethod($newValue);
+
+            // Enregistrer les changements dans la base de données
+            $this->entityManager->flush();
+
+            return new JsonResponse(['message' => 'Employee record updated successfully.']);
+        } else {
+            return new JsonResponse(['error' => 'Invalid column name.']);
+        }
     }
 }
 
