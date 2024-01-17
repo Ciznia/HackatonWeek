@@ -3,22 +3,20 @@
 
 namespace App\Controller;
 
-use Doctrine\ORM\EntityManagerInterface;
 use Doctrine\Persistence\ManagerRegistry;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
 use symfony\bundle\frameworkbundle\controller\controller;
 use App\Entity\Photo;
-use Symfony\Component\HttpFoundation\Request;
-
 class ApiController extends AbstractController
 {
 
-    private $entityManager;
-    public function __construct(EntityManagerInterface $entityManager)
+    private $doctrine;
+    public function __construct(ManagerRegistry $doctrine)
     {
-        $this->entityManager = $entityManager;
+        $this->doctrine = $doctrine;
     }
 
     /**
@@ -26,7 +24,7 @@ class ApiController extends AbstractController
      */
     public function getEmployees()
     {
-        $employees = $this->entityManager->getRepository(Photo::class)->findAll();
+        $employees = $this->doctrine->getRepository(Photo::class)->findAll();
         $data = [];
         foreach ($employees as $employee) {
             $data[] = [
@@ -44,36 +42,29 @@ class ApiController extends AbstractController
     }
 
     /**
-     * @Route("/api/update-employee/{id}", name="api_update_employee", methods={"GET"})
+     * @Route("/api/submitSchemaModificationRequest", name="api_submit_schema_modification_request", methods={"POST"})
      */
-    public function updateEmployee(Request $request, $id)
+
+    /*
+     * This method is used to submit a schema modification request.
+     */
+    public function submitSchemaModificationRequest(Request $request): JsonResponse
     {
-        dd($id);
-        // Récupérer l'employé à mettre à jour
-        $employee = $this->entityManager->getRepository(Photo::class)->find($id);
+        $data = json_decode($request->getContent(), true); // decode the JSON into an associative array
 
-        dd($employee);
-        if (!$employee) {
-            throw $this->createNotFoundException('Employee not found');
+        $columnName = $data['columnName']; // get the column name from the request
+
+        $entityManager = $this->getDoctrine()->getManager(); // get the entity manager
+        $existingColumn = $entityManager->getConnection()->getSchemaManager()->listTableColumns('nom_de_votre_table'); // get the existing columns of your table
+        if (isset($existingColumn[$columnName])) { // check if the column already exists
+            return new JsonResponse(['status' => 'Column already exists'], JsonResponse::HTTP_BAD_REQUEST);
         }
 
-        // Récupérer les nouvelles valeurs depuis le formulaire
-        $columnName = $request->request->get('column');
-        $newValue = $request->request->get('value');
+        $schemaModificationRequest = new SchemaModificationRequest(); // create a new schema modification request
+        $schemaModificationRequest->setColumnName($columnName); // set the column name
+        $entityManager->persist($schemaModificationRequest); // persist the schema modification request
+        $entityManager->flush();
 
-        // Vérifier que la colonne spécifiée existe dans l'entité
-        if (property_exists($employee, $columnName)) {
-            // Mettre à jour l'entité avec la nouvelle valeur
-            $setterMethod = 'set' . ucfirst($columnName);
-            $employee->$setterMethod($newValue);
-
-            // Enregistrer les changements dans la base de données
-            $this->entityManager->flush();
-
-            return new JsonResponse(['message' => 'Employee record updated successfully.']);
-        } else {
-            return new JsonResponse(['error' => 'Invalid column name.']);
-        }
+        return new JsonResponse(['status' => 'Schema modification request submitted'], JsonResponse::HTTP_CREATED);
     }
 }
-
