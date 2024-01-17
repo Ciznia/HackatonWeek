@@ -91,7 +91,7 @@ class ApiEmployeePOSTController extends AbstractController
     }
 
     /**
-     * @Route("/api/update-employee-equipe/{id}", name="api_update_employee-equipe", methods={"GET"})
+     * @Route("/api/update-employee-equipe/{id}", name="api_update_employee_equipe", methods={"POST"})
      */
     public function updateEmployeeEquipe(Request $request, $id)
     {
@@ -114,7 +114,7 @@ class ApiEmployeePOSTController extends AbstractController
     }
 
     /**
-     * @Route("/api/update-employee-name/{id}", name="api_update_employee-name", methods={"GET"})
+     * @Route("/api/update-employee-name/{id}", name="api_update_employee-name", methods={"POST"})
      */
 
     public function updateEmployeeName(Request $request, $id)
@@ -138,7 +138,7 @@ class ApiEmployeePOSTController extends AbstractController
     }
 
     /**
-     * @Route("/api/update-employee-firstname/{id}", name="api_update_employee-firstname", methods={"GET"})
+     * @Route("/api/update-employee-firstname/{id}", name="api_update_employee-firstname", methods={"POST"})
      */
 
     public function updateEmployeeFirstname(Request $request, $id)
