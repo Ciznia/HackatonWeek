@@ -6,7 +6,30 @@ api_employees:
   path: '/api/employees'
   controller: App\Controller\ApiController::getEmployees
   methods: ['GET']
+
 api_update_employee:
-  path: '/api/update-employee/{id}'
-  controller: App\Controller\ApiController::updateEmployee
-  methods: ['GET']
+  path: '/api/update-employee-poste/{id}'
+  controller: App\Controller\ApiEmployeePOSTController::updateEmployeePoste
+  methods: ['POST']
+
+api_update_employee_agence:
+  path: '/api/update-employee-agence/{id}'
+  controller: App\Controller\ApiEmployeePOSTController::updateEmployeeAgence
+  methods: ['POST']
+api_update_employee_equipe:
+  path: '/api/update-employee-equipe/{id}'
+  controller: App\Controller\ApiEmployeePOSTController::updateEmployeeEquipe
+  methods: ['POST']
+api_update_employee_name:
+  path: '/api/update-employee-name/{id}'
+  controller: App\Controller\ApiEmployeePOSTController::updateEmployeeName
+  methods: ['POST']
+api_update_employee_firstname:
+  path: '/api/update-employee-firstname/{id}'
+  controller: App\Controller\ApiEmployeePOSTController::updateEmployeeFirstname
+  methods: ['POST']
+
+api_add_employee:
+  path: '/api/add-employee'
+  controller: App\Controller\ApiEmployeePOSTController::addEmployee
+  methods: ['POST']

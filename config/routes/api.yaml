@@ -3,6 +3,11 @@ api_employees:
   controller: App\Controller\ApiController::getEmployees
   methods: ['GET']
 api_update_employee:
-  path: '/api/update-employee/{id}'
-  controller: App\Controller\ApiController::updateEmployee
+  path: '/api/update-employee-poste/{id}'
+  controller: App\Controller\ApiController::updateEmployeePoste
+  methods: ['GET']
+
+api_add_employee:
+  path: '/api/add-employee'
+  controller: App\Controller\ApiController::addEmployee
   methods: ['GET']
