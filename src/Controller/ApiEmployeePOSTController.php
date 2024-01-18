@@ -199,17 +199,28 @@ class ApiEmployeePOSTController extends AbstractController
                 $imageContent = file_get_contents($cheminImage);
 
                 // Convertissez l'image en un objet bytes
-                $response = new Response(base64_encode($imageContent));
-                $response->headers->set('Content-Type', 'application/octet-stream');
+                $response = base64_encode($imageContent);
 
-                return $response;
+                $data = [
+                    'data' => [
+                        'image' => $response,
+                    ],
+                ];
+
+                $jsonResponse = new Response(json_encode($data));
+                $jsonResponse->headers->set('Content-Type', 'application/json');
+
+                return $jsonResponse;
             } else {
                 // Fichier non trouvé
                 return new Response('File not found : ' . $cheminImage, Response::HTTP_NOT_FOUND);
             }
         } catch (\Exception $e) {
-            // En cas d'erreur, renvoyez une réponse d'erreur
-            return new Response($e->getMessage(), Response::HTTP_INTERNAL_SERVER_ERROR);
+            $data = [
+                'data' => $e->getMessage(),
+            ];
+
+            return new Response(json_encode($data), Response::HTTP_INTERNAL_SERVER_ERROR);
         }
     }
 }
