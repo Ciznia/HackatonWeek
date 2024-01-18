@@ -37,22 +37,3 @@ class ApiEmployeeDELETEController extends AbstractController
         return new JsonResponse(['message' => 'Employee record deleted successfully.']);
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

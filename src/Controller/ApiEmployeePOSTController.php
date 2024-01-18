@@ -26,6 +26,10 @@ class ApiEmployeePOSTController extends AbstractController
     {
         // Get data from the request body (assuming JSON format)
         $formData = $request->request->all();
+
+        if (!isset($formData['nom']) || !isset($formData['prenom']) || !isset($formData['poste']) || !isset($formData['equipe']) || !isset($formData['agence']) || !isset($formData['photo_pro']) || !isset($formData['photo_fun'])) {
+            return new JsonResponse(['error' => 'Incomplete data provided.'], Response::HTTP_BAD_REQUEST);
+        }
         // Create a new Photo entity
         $employee = new Photo();
         $employee->setNom($formData['nom']);
