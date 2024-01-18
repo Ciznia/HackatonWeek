@@ -94,7 +94,9 @@
     "prenom": "Brice",
     "poste": "Développeur",
     "equipe": "Bug Buster",
-    "agence": "Rennes"
+    "agence": "Rennes",
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/default.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/default.webp"
   },
   {
     "nom": "CHEVALIER",
@@ -308,7 +310,9 @@
     "prenom": "Sébastien",
     "poste": "Développeur Senior ",
     "equipe": "Bug Buster",
-    "agence": "Rennes"
+    "agence": "Rennes",
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/default.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/default.webp"
   },
   {
     "nom": "LECOLAZET",
