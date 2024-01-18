@@ -33,3 +33,7 @@ api_add_employee:
   path: '/api/add-employee'
   controller: App\Controller\ApiEmployeePOSTController::addEmployee
   methods: ['POST']
+api_add_image:
+  path: '/api/add-image'
+  controller: App\Controller\ApiEmployeePOSTController::traiterImage
+  methods: ['POST']

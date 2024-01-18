@@ -9,14 +9,23 @@ use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\Filesystem\Filesystem;
+use Symfony\Component\HttpKernel\KernelInterface;
+
+
 
 class ApiEmployeePOSTController extends AbstractController
 {
 
     private $entityManager;
-    public function __construct(EntityManagerInterface $entityManager)
+    private $filesystem;
+    private $kernel;
+    public function __construct(EntityManagerInterface $entityManager, Filesystem $filesystem, KernelInterface $kernel)
     {
         $this->entityManager = $entityManager;
+        $this->filesystem = $filesystem;
+        $this->kernel = $kernel;
+
     }
 
     /**
@@ -54,8 +63,9 @@ class ApiEmployeePOSTController extends AbstractController
      */
     public function updateEmployeePoste(Request $request, $id)
     {
+        dd("ok");
         // Récupérer l'employé à mettre à jour
-        $employee = $this->entityManager->getRepository(Photo::class)->findOneBy(['nom' => $id]);
+        $employee = $this->entityManager->getRepository(Photo::class)->findOneBy(['id' => $id]);
         if (!$employee) {
             throw $this->createNotFoundException('Employee not found');
         }
@@ -77,7 +87,7 @@ class ApiEmployeePOSTController extends AbstractController
     public function updateEmployeeAgence(Request $request, $id)
     {
         // Récupérer l'employé à mettre à jour
-        $employee = $this->entityManager->getRepository(Photo::class)->findOneBy(['nom' => $id]);
+        $employee = $this->entityManager->getRepository(Photo::class)->findOneBy(['id' => $id]);
         if (!$employee) {
             throw $this->createNotFoundException('Employee not found');
         }
@@ -100,7 +110,7 @@ class ApiEmployeePOSTController extends AbstractController
     public function updateEmployeeEquipe(Request $request, $id)
     {
         // Récupérer l'employé à mettre à jour
-        $employee = $this->entityManager->getRepository(Photo::class)->findOneBy(['nom' => $id]);
+        $employee = $this->entityManager->getRepository(Photo::class)->findOneBy(['id' => $id]);
         if (!$employee) {
             throw $this->createNotFoundException('Employee not found');
         }
@@ -124,7 +134,7 @@ class ApiEmployeePOSTController extends AbstractController
     public function updateEmployeeName(Request $request, $id)
     {
         // Récupérer l'employé à mettre à jour
-        $employee = $this->entityManager->getRepository(Photo::class)->findOneBy(['nom' => $id]);
+        $employee = $this->entityManager->getRepository(Photo::class)->findOneBy(['id' => $id]);
         if (!$employee) {
             throw $this->createNotFoundException('Employee not found');
         }
@@ -148,7 +158,7 @@ class ApiEmployeePOSTController extends AbstractController
     public function updateEmployeeFirstname(Request $request, $id)
     {
         // Récupérer l'employé à mettre à jour
-        $employee = $this->entityManager->getRepository(Photo::class)->findOneBy(['nom' => $id]);
+        $employee = $this->entityManager->getRepository(Photo::class)->findOneBy(['id' => $id]);
         if (!$employee) {
             throw $this->createNotFoundException('Employee not found');
         }
@@ -163,5 +173,43 @@ class ApiEmployeePOSTController extends AbstractController
         $this->entityManager->flush();
 
         return new JsonResponse(['message' => 'Employee record updated successfully.']);
+    }
+
+    /**
+     * @Route("/traiter_image", name="traiter_image", methods={"POST"})
+     */
+    public function traiterImage(Request $request): Response
+    {
+        // Obtenez le chemin absolu de l'image depuis le corps de la requête
+        $cheminImageEncoded = $request->getContent();
+        $cheminImage = urldecode($cheminImageEncoded);
+        $cheminImage = str_replace("https://127.0.0.1:8000", "/public", $cheminImage);
+        // Divise la chaîne en un tableau en fonction du caractère "/"
+        $segments = explode('/', $cheminImage);
+        // Supprime le premier élément du tableau
+        array_shift($segments);
+
+        // Rejoins les éléments restants pour former le nouveau chemin
+        $cheminImage = '/' . implode('/', $segments);
+        $cheminImage = $this->kernel->getProjectDir() . $cheminImage;
+        try {
+            // Vérifiez que le fichier existe avant de le traiter
+            if ($this->filesystem->exists($cheminImage)) {
+                // Lisez le contenu du fichier
+                $imageContent = file_get_contents($cheminImage);
+
+                // Convertissez l'image en un objet bytes
+                $response = new Response(base64_encode($imageContent));
+                $response->headers->set('Content-Type', 'application/octet-stream');
+
+                return $response;
+            } else {
+                // Fichier non trouvé
+                return new Response('File not found : ' . $cheminImage, Response::HTTP_NOT_FOUND);
+            }
+        } catch (\Exception $e) {
+            // En cas d'erreur, renvoyez une réponse d'erreur
+            return new Response($e->getMessage(), Response::HTTP_INTERNAL_SERVER_ERROR);
+        }
     }
 }
