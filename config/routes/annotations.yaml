@@ -36,4 +36,4 @@ api_add_employee:
 api_add_image:
   path: '/api/add-image'
   controller: App\Controller\ApiEmployeePOSTController::traiterImage
-  methods: ['POST']
+  methods: ['GET']

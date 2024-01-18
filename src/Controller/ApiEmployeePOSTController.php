@@ -176,12 +176,12 @@ class ApiEmployeePOSTController extends AbstractController
     }
 
     /**
-     * @Route("/traiter_image", name="traiter_image", methods={"POST"})
+     * @Route("/api/add-image", name="add-image", methods={"GET"})
      */
     public function traiterImage(Request $request): Response
     {
         // Obtenez le chemin absolu de l'image depuis le corps de la requête
-        $cheminImageEncoded = $request->getContent();
+        $cheminImageEncoded = $request->query->get('path');
         $cheminImage = urldecode($cheminImageEncoded);
         $cheminImage = str_replace("https://127.0.0.1:8000", "/public", $cheminImage);
         // Divise la chaîne en un tableau en fonction du caractère "/"
