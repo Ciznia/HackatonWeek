@@ -5,8 +5,8 @@
     "poste": "Développeur",
     "equipe": "Pôle AI",
     "agence": "Rennes",
-    "photo_pro": "https://trombi.6tmphp.fr/images/pro/AHMANE-Hafid.jpg",
-    "photo_fun": "https://trombi.6tmphp.fr/images/fun/AHMANE-Hafid.jpg"
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/AHMANE-Hafid.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/AHMANE-Hafid.webp"
   },
   {
     "nom": "ANDRES",
@@ -14,15 +14,17 @@
     "poste": "Responsable d'équipe",
     "equipe": "Pôle AI",
     "agence": "Rennes",
-    "photo_pro": "https://trombi.6tmphp.fr/images/pro/ANDRES-Frederic.jpg",
-    "photo_fun": "https://trombi.6tmphp.fr/images/fun/ANDRES-Frederic.jpg"
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/ANDRES-Frederic.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/ANDRES-Frederic.webp"
   },
   {
     "nom": "AUBRY",
     "prenom": "Christophe",
     "poste": "Développeur Senior ",
     "equipe": "Pôle Walker",
-    "agence": "Rennes"
+    "agence": "Rennes",
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/default.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/default.webp"
   },
   {
     "nom": "AULNETTE",
@@ -30,15 +32,17 @@
     "poste": "Directeur Technique ",
     "equipe": "Team IT",
     "agence": "Rennes",
-    "photo_pro": "https://trombi.6tmphp.fr/images/pro/AULNETTE-Philippe.jpg",
-    "photo_fun": "https://trombi.6tmphp.fr/images/fun/AULNETTE-Philippe.jpg"
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/AULNETTE-Philippe.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/AULNETTE-Philippe.webp"
   },
   {
     "nom": "AVALIANI",
     "prenom": "Ketevan",
     "poste": "Assistante administrative",
     "equipe": "Team Rocket",
-    "agence": "Rennes"
+    "agence": "Rennes",
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/default.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/default.webp"
   },
   {
     "nom": "BAUDOT",
@@ -46,8 +50,8 @@
     "poste": "Développeur ",
     "equipe": "Pôle Cousteau ",
     "agence": "Rennes",
-    "photo_pro": "https://trombi.6tmphp.fr/images/pro/BAUDOT-Tom.jpg",
-    "photo_fun": "https://trombi.6tmphp.fr/images/fun/BAUDOT-Tom.jpg"
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/BAUDOT-Tom.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/BAUDOT-Tom.webp"
   },
   {
     "nom": "BEAUFILS",
@@ -55,8 +59,8 @@
     "poste": "Product Owner",
     "equipe": "Pôle 8.6",
     "agence": "Rennes",
-    "photo_pro": "https://trombi.6tmphp.fr/images/pro/BEAUFILS-Maud.jpg",
-    "photo_fun": "https://trombi.6tmphp.fr/images/fun/BEAUFILS-Maud.jpg"
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/BEAUFILS-Maud.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/BEAUFILS-Maud.webp"
   },
   {
     "nom": "CANTEPIE",
@@ -64,8 +68,8 @@
     "poste": "Développeur",
     "equipe": "Pôle Cousteau ",
     "agence": "Rennes",
-    "photo_pro": "https://trombi.6tmphp.fr/images/pro/CANTEPIE-Adrien.jpg",
-    "photo_fun": "https://trombi.6tmphp.fr/images/fun/CANTEPIE-Adrien.jpg"
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/CANTEPIE-Adrien.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/CANTEPIE-Adrien.webp"
   },
   {
     "nom": "CARNEIRO",
@@ -73,8 +77,8 @@
     "poste": "RSI ",
     "equipe": "Team IT ",
     "agence": "Rennes",
-    "photo_pro": "https://trombi.6tmphp.fr/images/pro/CARNEIRO-Mickael.jpg",
-    "photo_fun": "https://trombi.6tmphp.fr/images/fun/CARNEIRO-Mickael.jpg"
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/CARNEIRO-Mickael.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/CARNEIRO-Mickael.webp"
   },
   {
     "nom": "CASTEX",
@@ -82,8 +86,8 @@
     "poste": "Développeur",
     "equipe": "Pôle Position",
     "agence": "Rennes",
-    "photo_pro": "https://trombi.6tmphp.fr/images/pro/CASTEX-David.jpg",
-    "photo_fun": "https://trombi.6tmphp.fr/images/fun/CASTEX-David.jpg"
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/CASTEX-David.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/CASTEX-David.webp"
   },
   {
     "nom": "CHAPUIS",
@@ -98,15 +102,17 @@
     "poste": "Product Owner",
     "equipe": "Pôle Position",
     "agence": "Rennes",
-    "photo_pro": "https://trombi.6tmphp.fr/images/pro/CHEVALIER-Elodie.jpg",
-    "photo_fun": "https://trombi.6tmphp.fr/images/fun/CHEVALIER-Elodie.jpg"
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/CHEVALIER-Elodie.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/CHEVALIER-Elodie.webp"
   },
   {
     "nom": "CHEVALIER",
     "prenom": "Benoît",
     "poste": "Développeur",
     "equipe": "Team Elephant ",
-    "agence": "Rennes"
+    "agence": "Rennes",
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/default.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/default.webp"
   },
   {
     "nom": "COET",
@@ -114,15 +120,17 @@
     "poste": "Développeur",
     "equipe": "Pôle Cousteau ",
     "agence": "Rennes",
-    "photo_pro": "https://trombi.6tmphp.fr/images/pro/COET-Jean.jpg",
-    "photo_fun": "https://trombi.6tmphp.fr/images/fun/COET-Jean.jpg"
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/COET-Jean.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/COET-Jean.webp"
   },
   {
     "nom": "COUTAND",
     "prenom": "Bastien",
     "poste": "Alternant",
     "equipe": "Team IT ",
-    "agence": "Rennes"
+    "agence": "Rennes",
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/default.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/default.webp"
   },
   {
     "nom": "CRUTEL",
@@ -130,8 +138,8 @@
     "poste": "Chargée de recrutement ",
     "equipe": "Team Rocket ",
     "agence": "Rennes",
-    "photo_pro": "https://trombi.6tmphp.fr/images/pro/CRUTEL-Pauline.jpg",
-    "photo_fun": "https://trombi.6tmphp.fr/images/fun/CRUTEL-Pauline.jpg"
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/CRUTEL-Pauline.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/CRUTEL-Pauline.webp"
   },
   {
     "nom": "DANTAN",
@@ -139,8 +147,8 @@
     "poste": "Développeur ",
     "equipe": "Team Eden",
     "agence": "Rennes",
-    "photo_pro": "https://trombi.6tmphp.fr/images/pro/DANTAN-Remy.jpg",
-    "photo_fun": "https://trombi.6tmphp.fr/images/fun/DANTAN-Remy.jpg"
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/DANTAN-Remy.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/DANTAN-Remy.webp"
   },
   {
     "nom": "DE MONCUIT",
@@ -148,15 +156,17 @@
     "poste": "Responsable Marketing ",
     "equipe": "Team Rocket ",
     "agence": "Rennes",
-    "photo_pro": "https://trombi.6tmphp.fr/images/pro/DE-MONCUIT-Gaetan.jpg",
-    "photo_fun": "https://trombi.6tmphp.fr/images/fun/DE-MONCUIT-Gaetan.jpg"
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/DE-MONCUIT-Gaetan.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/DE-MONCUIT-Gaetan.webp"
   },
   {
     "nom": "DELANOE",
     "prenom": "Julien",
     "poste": "Développeur",
     "equipe": "Bug Buster",
-    "agence": "Rennes"
+    "agence": "Rennes",
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/default.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/default.webp"
   },
   {
     "nom": "DELENTE",
@@ -164,15 +174,17 @@
     "poste": "Responsable Développement",
     "equipe": "Team Rocket ",
     "agence": "Rennes",
-    "photo_pro": "https://trombi.6tmphp.fr/images/pro/DELENTE-Edouard.jpg",
-    "photo_fun": "https://trombi.6tmphp.fr/images/fun/DELENTE-Edouard.jpg"
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/DELENTE-Edouard.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/DELENTE-Edouard.webp"
   },
   {
     "nom": "DESGRANGES",
     "prenom": "Pierre",
     "poste": "Développeur Junior",
     "equipe": "Pôle Position ",
-    "agence": "Rennes"
+    "agence": "Rennes",
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/default.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/default.webp"
   },
   {
     "nom": "DIGUET",
@@ -180,8 +192,8 @@
     "poste": "Développeur ",
     "equipe": "Pôle 8.6",
     "agence": "Rennes",
-    "photo_pro": "https://trombi.6tmphp.fr/images/pro/DIGUET-Lucas.jpg",
-    "photo_fun": "https://trombi.6tmphp.fr/images/fun/DIGUET-Lucas.jpg"
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/DIGUET-Lucas.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/DIGUET-Lucas.webp"
   },
   {
     "nom": "FAILLIE",
@@ -189,8 +201,8 @@
     "poste": "Directeur de l'agence d'Angers ",
     "equipe": "Team Rocket",
     "agence": "Rennes",
-    "photo_pro": "https://trombi.6tmphp.fr/images/pro/FAILLIE-Michel.jpg",
-    "photo_fun": "https://trombi.6tmphp.fr/images/fun/FAILLIE-Michel.jpg"
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/FAILLIE-Michel.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/FAILLIE-Michel.webp"
   },
   {
     "nom": "GANTOIS",
@@ -198,36 +210,44 @@
     "poste": "Développeur",
     "equipe": "Pôle Cousteau ",
     "agence": "Rennes",
-    "photo_pro": "https://trombi.6tmphp.fr/images/pro/GANTOIS-Emilien.jpg",
-    "photo_fun": "https://trombi.6tmphp.fr/images/fun/GANTOIS-Emilien.jpg"
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/GANTOIS-Emilien.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/GANTOIS-Emilien.webp"
   },
   {
     "nom": "GAUCHER",
     "prenom": "Clara",
     "poste": "Chef de Projet",
     "equipe": "Pôle Walker",
-    "agence": "Rennes"
+    "agence": "Rennes",
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/default.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/default.webp"
   },
   {
     "nom": "GELEBART",
     "prenom": "Nicolas",
     "poste": "Business Manager",
     "equipe": "Team Rocket ",
-    "agence": "Rennes"
+    "agence": "Rennes",
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/default.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/default.webp"
   },
   {
     "nom": "GINGUENEAU",
     "prenom": "Pauline",
     "poste": "Assistante Commerciale ",
     "equipe": "Team Rocket ",
-    "agence": "Rennes"
+    "agence": "Rennes",
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/default.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/default.webp"
   },
   {
     "nom": "GOSSELIN",
     "prenom": "Antoine",
     "poste": "Développeur Junior",
     "equipe": "Pôle Walker",
-    "agence": "Rennes"
+    "agence": "Rennes",
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/default.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/default.webp"
   },
   {
     "nom": "GREFFIER",
@@ -235,8 +255,8 @@
     "poste": "Administrateur Système & Réseau",
     "equipe": "Team IT ",
     "agence": "Rennes",
-    "photo_pro": "https://trombi.6tmphp.fr/images/pro/GREFFIER-Jean-Christophe.jpg",
-    "photo_fun": "https://trombi.6tmphp.fr/images/fun/GREFFIER-Jean-Christophe.jpg"
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/GREFFIER-Jean-Christophe.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/GREFFIER-Jean-Christophe.webp"
   },
   {
     "nom": "GUERIN",
@@ -244,8 +264,8 @@
     "poste": "Développeur",
     "equipe": "Pôle Walker",
     "agence": "Rennes",
-    "photo_pro": "https://trombi.6tmphp.fr/images/pro/GUERIN-Nicolas.jpg",
-    "photo_fun": "https://trombi.6tmphp.fr/images/fun/GUERIN-Nicolas.jpg"
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/GUERIN-Nicolas.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/GUERIN-Nicolas.webp"
   },
   {
     "nom": "GUILBERT",
@@ -253,8 +273,8 @@
     "poste": "Chef de Projet",
     "equipe": "Bug Buster",
     "agence": "Rennes",
-    "photo_pro": "https://trombi.6tmphp.fr/images/pro/GUILBERT-Antoine.jpg",
-    "photo_fun": "https://trombi.6tmphp.fr/images/fun/GUILBERT-Antoine.jpg"
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/GUILBERT-Antoine.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/GUILBERT-Antoine.webp"
   },
   {
     "nom": "JEZEQUEL",
@@ -262,8 +282,8 @@
     "poste": "Responsable Technique ",
     "equipe": "Pôle Position",
     "agence": "Rennes",
-    "photo_pro": "https://trombi.6tmphp.fr/images/pro/JEZEQUEL-Vincent.jpg",
-    "photo_fun": "https://trombi.6tmphp.fr/images/fun/JEZEQUEL-Vincent.jpg"
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/JEZEQUEL-Vincent.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/JEZEQUEL-Vincent.webp"
   },
   {
     "nom": "JUBLAN",
@@ -271,8 +291,8 @@
     "poste": "Assistante administrative",
     "equipe": "Team Rocket",
     "agence": "Rennes",
-    "photo_pro": "https://trombi.6tmphp.fr/images/pro/JUBLAN-Sandrine.jpg",
-    "photo_fun": "https://trombi.6tmphp.fr/images/fun/JUBLAN-Sandrine.jpg"
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/JUBLAN-Sandrine.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/JUBLAN-Sandrine.webp"
   },
   {
     "nom": "LE COQ",
@@ -280,8 +300,8 @@
     "poste": "Comptable ",
     "equipe": "Team Rocket",
     "agence": "Rennes",
-    "photo_pro": "https://trombi.6tmphp.fr/images/pro/LE-COQ-Alexandra.jpg",
-    "photo_fun": "https://trombi.6tmphp.fr/images/fun/LE-COQ-Alexandra.jpg"
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/LE-COQ-Alexandra.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/LE-COQ-Alexandra.webp"
   },
   {
     "nom": "LE GOFF",
@@ -296,15 +316,17 @@
     "poste": "Alternant",
     "equipe": "Team Elephant ",
     "agence": "Rennes",
-    "photo_pro": "https://trombi.6tmphp.fr/images/pro/LECOLAZET-Aymeric.jpg",
-    "photo_fun": "https://trombi.6tmphp.fr/images/fun/LECOLAZET-Aymeric.jpg"
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/LECOLAZET-Aymeric.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/LECOLAZET-Aymeric.webp"
   },
   {
     "nom": "LEGRAND",
     "prenom": "Thomas",
     "poste": "Responsable d'Equipe",
     "equipe": "Pôle Position ",
-    "agence": "Rennes"
+    "agence": "Rennes",
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/default.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/default.webp"
   },
   {
     "nom": "LEMARIE",
@@ -312,8 +334,8 @@
     "poste": "Design Manager",
     "equipe": "Studio Design",
     "agence": "Rennes",
-    "photo_pro": "https://trombi.6tmphp.fr/images/pro/LEMARIE-Benjamin.jpg",
-    "photo_fun": "https://trombi.6tmphp.fr/images/fun/LEMARIE-Benjamin.jpg"
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/LEMARIE-Benjamin.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/LEMARIE-Benjamin.webp"
   },
   {
     "nom": "LERAY",
@@ -321,8 +343,8 @@
     "poste": "Développeur ",
     "equipe": "Bug Buster",
     "agence": "Rennes",
-    "photo_pro": "https://trombi.6tmphp.fr/images/pro/LERAY-Romain.jpg",
-    "photo_fun": "https://trombi.6tmphp.fr/images/fun/LERAY-Romain.jpg"
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/LERAY-Romain.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/LERAY-Romain.webp"
   },
   {
     "nom": "LESAGE",
@@ -330,8 +352,8 @@
     "poste": "Développeur Senior ",
     "equipe": "Pôle AI",
     "agence": "Rennes",
-    "photo_pro": "https://trombi.6tmphp.fr/images/pro/LESAGE-Olivier.jpg",
-    "photo_fun": "https://trombi.6tmphp.fr/images/fun/LESAGE-Olivier.jpg"
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/LESAGE-Olivier.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/LESAGE-Olivier.webp"
   },
   {
     "nom": "LEVASSEUR",
@@ -339,8 +361,8 @@
     "poste": "Développeur ",
     "equipe": "Team Eden",
     "agence": "Rennes",
-    "photo_pro": "https://trombi.6tmphp.fr/images/pro/LEVASSEUR-Damien.jpg",
-    "photo_fun": "https://trombi.6tmphp.fr/images/fun/LEVASSEUR-Damien.jpg"
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/LEVASSEUR-Damien.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/LEVASSEUR-Damien.webp"
   },
   {
     "nom": "LIDURIN",
@@ -348,8 +370,8 @@
     "poste": "Développeur / Chef de Projet ",
     "equipe": "Pôle AI",
     "agence": "Rennes",
-    "photo_pro": "https://trombi.6tmphp.fr/images/pro/LIDURIN-Mael.jpg",
-    "photo_fun": "https://trombi.6tmphp.fr/images/fun/LIDURIN-Mael.jpg"
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/LIDURIN-Mael.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/LIDURIN-Mael.webp"
   },
   {
     "nom": "LOICHON",
@@ -357,8 +379,8 @@
     "poste": "Intégrateur ",
     "equipe": "Studio Design",
     "agence": "Rennes",
-    "photo_pro": "https://trombi.6tmphp.fr/images/pro/LOICHON-Yvan.jpg",
-    "photo_fun": "https://trombi.6tmphp.fr/images/fun/LOICHON-Yvan.jpg"
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/LOICHON-Yvan.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/LOICHON-Yvan.webp"
   },
   {
     "nom": "LOUSTAU",
@@ -366,15 +388,17 @@
     "poste": "Développeur ",
     "equipe": "Team Eden",
     "agence": "Rennes",
-    "photo_pro": "https://trombi.6tmphp.fr/images/pro/LOUSTAU-Quentin.jpg",
-    "photo_fun": "https://trombi.6tmphp.fr/images/fun/LOUSTAU-Quentin.jpg"
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/LOUSTAU-Quentin.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/LOUSTAU-Quentin.webp"
   },
   {
     "nom": "LOUVEAU",
     "prenom": "Bertille",
     "poste": "Chargée de communication ",
     "equipe": "Team Rocket",
-    "agence": "Rennes"
+    "agence": "Rennes",
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/default.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/default.webp"
   },
   {
     "nom": "MADEC",
@@ -382,8 +406,8 @@
     "poste": "Développeur Junior",
     "equipe": "Pôle Cousteau ",
     "agence": "Rennes",
-    "photo_pro": "https://trombi.6tmphp.fr/images/pro/MADEC-Florian.jpg",
-    "photo_fun": "https://trombi.6tmphp.fr/images/fun/MADEC-Florian.jpg"
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/MADEC-Florian.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/MADEC-Florian.webp"
   },
   {
     "nom": "MESLET",
@@ -391,8 +415,8 @@
     "poste": "Talent Acquisition Specialist",
     "equipe": "Team Rocket ",
     "agence": "Rennes",
-    "photo_pro": "https://trombi.6tmphp.fr/images/pro/MESLET-Faustine.jpg",
-    "photo_fun": "https://trombi.6tmphp.fr/images/fun/MESLET-Faustine.jpg"
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/MESLET-Faustine.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/MESLET-Faustine.webp"
   },
   {
     "nom": "MUSET",
@@ -400,8 +424,8 @@
     "poste": "Développeur",
     "equipe": "Pôle Cousteau ",
     "agence": "Rennes",
-    "photo_pro": "https://trombi.6tmphp.fr/images/pro/MUSET-Clement.jpg",
-    "photo_fun": "https://trombi.6tmphp.fr/images/fun/MUSET-Clement.jpg"
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/MUSET-Clement.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/MUSET-Clement.webp"
   },
   {
     "nom": "OBEE",
@@ -409,8 +433,8 @@
     "poste": "Technicien Support",
     "equipe": "Pôle AI",
     "agence": "Rennes",
-    "photo_pro": "https://trombi.6tmphp.fr/images/pro/OBEE-Boris.jpg",
-    "photo_fun": "https://trombi.6tmphp.fr/images/fun/OBEE-Boris.jpg"
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/OBEE-Boris.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/OBEE-Boris.webp"
   },
   {
     "nom": "OZEAU",
@@ -418,8 +442,8 @@
     "poste": "Développeur Senior ",
     "equipe": "Pôle 8.6",
     "agence": "Rennes",
-    "photo_pro": "https://trombi.6tmphp.fr/images/pro/OZEAU-Morgan.jpg",
-    "photo_fun": "https://trombi.6tmphp.fr/images/fun/OZEAU-Morgan.jpg"
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/OZEAU-Morgan.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/OZEAU-Morgan.webp"
   },
   {
     "nom": "PERCHEREL ",
@@ -427,15 +451,17 @@
     "poste": "Responsable d'équipe",
     "equipe": "Bug Buster",
     "agence": "Rennes",
-    "photo_pro": "https://trombi.6tmphp.fr/images/pro/PERCHEREL-Ludovic.jpg",
-    "photo_fun": "https://trombi.6tmphp.fr/images/fun/PERCHEREL-Ludovic.jpg"
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/PERCHEREL-Ludovic.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/PERCHEREL-Ludovic.webp"
   },
   {
     "nom": "PERLINSKI",
     "prenom": "Alix",
     "poste": "Cheffe de projet",
     "equipe": "Team Elephant ",
-    "agence": "Rennes"
+    "agence": "Rennes",
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/default.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/default.webp"
   },
   {
     "nom": "POISSON",
@@ -443,15 +469,17 @@
     "poste": "Développeur Junior",
     "equipe": "Pôle Position ",
     "agence": "Rennes",
-    "photo_pro": "https://trombi.6tmphp.fr/images/pro/POISSON-Florian.jpg",
-    "photo_fun": "https://trombi.6tmphp.fr/images/fun/POISSON-Florian.jpg"
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/POISSON-Florian.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/POISSON-Florian.webp"
   },
   {
     "nom": "PRUD'HOMME",
     "prenom": "Emilie",
     "poste": "Cheffe de projet",
     "equipe": "Pôle Cousteau ",
-    "agence": "Rennes"
+    "agence": "Rennes",
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/default.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/default.webp"
   },
   {
     "nom": "QUENTEL",
@@ -459,8 +487,8 @@
     "poste": "Développeur",
     "equipe": "Pôle Position",
     "agence": "Rennes",
-    "photo_pro": "https://trombi.6tmphp.fr/images/pro/QUENTEL-Thomas.jpg",
-    "photo_fun": "https://trombi.6tmphp.fr/images/fun/QUENTEL-Thomas.jpg"
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/QUENTEL-Thomas.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/QUENTEL-Thomas.webp"
   },
   {
     "nom": "RAMAUGE",
@@ -468,8 +496,8 @@
     "poste": "Développeur ",
     "equipe": "Pôle Walker",
     "agence": "Rennes",
-    "photo_pro": "https://trombi.6tmphp.fr/images/pro/RAMAUGE-Benjamin.jpg",
-    "photo_fun": "https://trombi.6tmphp.fr/images/fun/RAMAUGE-Benjamin.jpg"
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/RAMAUGE-Benjamin.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/RAMAUGE-Benjamin.webp"
   },
   {
     "nom": "RENARD",
@@ -477,8 +505,8 @@
     "poste": "Développeur ",
     "equipe": "Pôle Position",
     "agence": "Rennes",
-    "photo_pro": "https://trombi.6tmphp.fr/images/pro/RENARD-Valentin.jpg",
-    "photo_fun": "https://trombi.6tmphp.fr/images/fun/RENARD-Valentin.jpg"
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/RENARD-Valentin.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/RENARD-Valentin.webp"
   },
   {
     "nom": "ROUSSEAU",
@@ -486,8 +514,8 @@
     "poste": "Développeur Junior",
     "equipe": "Bug Buster",
     "agence": "Rennes",
-    "photo_pro": "https://trombi.6tmphp.fr/images/pro/ROUSSEAU-Yoann.jpg",
-    "photo_fun": "https://trombi.6tmphp.fr/images/fun/ROUSSEAU-Yoann.jpg"
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/ROUSSEAU-Yoann.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/ROUSSEAU-Yoann.webp"
   },
   {
     "nom": "SAUVE",
@@ -495,8 +523,8 @@
     "poste": "Chef de projet",
     "equipe": "Pôle Cousteau ",
     "agence": "Rennes",
-    "photo_pro": "https://trombi.6tmphp.fr/images/pro/SAUVE-Christophe.jpg",
-    "photo_fun": "https://trombi.6tmphp.fr/images/fun/SAUVE-Christophe.jpg"
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/SAUVE-Christophe.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/SAUVE-Christophe.webp"
   },
   {
     "nom": "SAUVE",
@@ -504,8 +532,8 @@
     "poste": "Directrice Administrative et Financière",
     "equipe": "Team Rocket ",
     "agence": "Rennes",
-    "photo_pro": "https://trombi.6tmphp.fr/images/pro/SAUVE-Karine.jpg",
-    "photo_fun": "https://trombi.6tmphp.fr/images/fun/SAUVE-Karine.jpg"
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/SAUVE-Karine.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/SAUVE-Karine.webp"
   },
   {
     "nom": "SIMON",
@@ -513,15 +541,17 @@
     "poste": "Responsable d'équipe",
     "equipe": "Pôle Walker",
     "agence": "Rennes",
-    "photo_pro": "https://trombi.6tmphp.fr/images/pro/SIMON-Thomas.jpg",
-    "photo_fun": "https://trombi.6tmphp.fr/images/fun/SIMON-Thomas.jpg"
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/SIMON-Thomas.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/SIMON-Thomas.webp"
   },
   {
     "nom": "TARLET",
     "prenom": "Emeline",
     "poste": "Alternant",
     "equipe": "Team Rocket ",
-    "agence": "Rennes"
+    "agence": "Rennes",
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/default.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/default.webp"
   },
   {
     "nom": "THOMAS",
@@ -529,15 +559,17 @@
     "poste": "Développeur ",
     "equipe": "Bug Buster",
     "agence": "Rennes",
-    "photo_pro": "https://trombi.6tmphp.fr/images/pro/THOMAS-Pierre-Yves.jpg",
-    "photo_fun": "https://trombi.6tmphp.fr/images/fun/THOMAS-Pierre-Yves.jpg"
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/THOMAS-Pierre-Yves.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/THOMAS-Pierre-Yves.webp"
   },
   {
     "nom": "TOQUE",
     "prenom": "Julien",
     "poste": "Business Developer ",
     "equipe": "Team Rocket",
-    "agence": "Rennes"
+    "agence": "Rennes",
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/default.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/default.webp"
   },
   {
     "nom": "TREMIER",
@@ -545,8 +577,8 @@
     "poste": "Président ",
     "equipe": "Team Rocket ",
     "agence": "Rennes",
-    "photo_pro": "https://trombi.6tmphp.fr/images/pro/TREMIER-Stephane.jpg",
-    "photo_fun": "https://trombi.6tmphp.fr/images/fun/TREMIER-Stephane.jpg"
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/TREMIER-Stephane.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/TREMIER-Stephane.webp"
   },
   {
     "nom": "VANNIER",
@@ -554,8 +586,8 @@
     "poste": "Développeur Junior",
     "equipe": "Pôle AI",
     "agence": "Rennes",
-    "photo_pro": "https://trombi.6tmphp.fr/images/pro/VANNIER-Samuel.jpg",
-    "photo_fun": "https://trombi.6tmphp.fr/images/fun/VANNIER-Samuel.jpg"
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/VANNIER-Samuel.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/VANNIER-Samuel.webp"
   },
   {
     "nom": "VEILLAUX",
@@ -563,8 +595,8 @@
     "poste": "Business Developer Junior ",
     "equipe": "Team Rocket",
     "agence": "Rennes",
-    "photo_pro": "https://trombi.6tmphp.fr/images/pro/VEILLAUX-Pierre.jpg",
-    "photo_fun": "https://trombi.6tmphp.fr/images/fun/VEILLAUX-Pierre.jpg"
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/VEILLAUX-Pierre.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/VEILLAUX-Pierre.webp"
   },
   {
     "nom": "VERON",
@@ -572,22 +604,26 @@
     "poste": "Développeur Junior",
     "equipe": "Pôle 8.6",
     "agence": "Rennes",
-    "photo_pro": "https://trombi.6tmphp.fr/images/pro/VERON-Mael.jpg",
-    "photo_fun": "https://trombi.6tmphp.fr/images/fun/VERON-Mael.jpg"
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/VERON-Mael.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/VERON-Mael.webp"
   },
   {
     "nom": "AUPIAIS",
     "prenom": "David",
     "poste": "Ingénieur Fullstack",
     "equipe": "Pôle Passe Partout ",
-    "agence": "Angers"
+    "agence": "Angers",
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/default.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/default.webp"
   },
   {
     "nom": "BIORET",
     "prenom": "Nicolas",
     "poste": "Développeur",
     "equipe": "Pôle Passe Partout ",
-    "agence": "Angers"
+    "agence": "Angers",
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/default.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/default.webp"
   },
   {
     "nom": "BONTEMPS",
@@ -595,8 +631,8 @@
     "poste": "Analyste développeur",
     "equipe": "Pôle Passe Partout ",
     "agence": "Angers",
-    "photo_pro": "https://trombi.6tmphp.fr/images/pro/BONTEMPS-Quentin.jpg",
-    "photo_fun": "https://trombi.6tmphp.fr/images/fun/BONTEMPS-Quentin.jpg"
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/BONTEMPS-Quentin.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/BONTEMPS-Quentin.webp"
   },
   {
     "nom": "CHENARD",
@@ -604,8 +640,8 @@
     "poste": "Développeur",
     "equipe": "Pôle Griffondor",
     "agence": "Angers",
-    "photo_pro": "https://trombi.6tmphp.fr/images/pro/CHENARD-Renaud.jpg",
-    "photo_fun": "https://trombi.6tmphp.fr/images/fun/CHENARD-Renaud.jpg"
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/CHENARD-Renaud.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/CHENARD-Renaud.webp"
   },
   {
     "nom": "DELCROS",
@@ -613,15 +649,17 @@
     "poste": "Chef de projet / Responsable d'équipe",
     "equipe": "Pôle Passe Partout ",
     "agence": "Angers",
-    "photo_pro": "https://trombi.6tmphp.fr/images/pro/DELCROS-Cedric.jpg",
-    "photo_fun": "https://trombi.6tmphp.fr/images/fun/DELCROS-Cedric.jpg"
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/DELCROS-Cedric.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/DELCROS-Cedric.webp"
   },
   {
     "nom": "DELEVALLEZ",
     "prenom": "Zacharie",
     "poste": "Développeur Junior",
     "equipe": "Pôle Passe Partout ",
-    "agence": "Angers"
+    "agence": "Angers",
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/default.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/default.webp"
   },
   {
     "nom": "DURAND",
@@ -629,8 +667,8 @@
     "poste": "Développeur",
     "equipe": "Pôle Griffondor ",
     "agence": "Angers",
-    "photo_pro": "https://trombi.6tmphp.fr/images/pro/DURAND-Guillaume.jpg",
-    "photo_fun": "https://trombi.6tmphp.fr/images/fun/DURAND-Guillaume.jpg"
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/DURAND-Guillaume.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/DURAND-Guillaume.webp"
   },
   {
     "nom": "GIRARD",
@@ -638,8 +676,8 @@
     "poste": "Développeur",
     "equipe": "Pôle Passe Partout ",
     "agence": "Angers",
-    "photo_pro": "https://trombi.6tmphp.fr/images/pro/GIRARD-Amaury.jpg",
-    "photo_fun": "https://trombi.6tmphp.fr/images/fun/GIRARD-Amaury.jpg"
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/GIRARD-Amaury.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/GIRARD-Amaury.webp"
   },
   {
     "nom": "GARRETA ",
@@ -647,8 +685,8 @@
     "poste": "Développeur Junior ",
     "equipe": "Pôle Passe Partout ",
     "agence": "Angers",
-    "photo_pro": "https://trombi.6tmphp.fr/images/pro/GARRETA-Antoine.jpg",
-    "photo_fun": "https://trombi.6tmphp.fr/images/fun/GARRETA-Antoine.jpg"
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/GARRETA-Antoine.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/GARRETA-Antoine.webp"
   },
   {
     "nom": "GUERBAA",
@@ -656,29 +694,35 @@
     "poste": "Développeur",
     "equipe": "Pôle Griffondor",
     "agence": "Angers",
-    "photo_pro": "https://trombi.6tmphp.fr/images/pro/GUERBAA-Ines.jpg",
-    "photo_fun": "https://trombi.6tmphp.fr/images/fun/GUERBAA-Ines.jpg"
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/GUERBAA-Ines.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/GUERBAA-Ines.webp"
   },
   {
     "nom": "HAMON",
     "prenom": "Kévin",
     "poste": "Développeur",
     "equipe": "Pôle Passe Partout ",
-    "agence": "Angers"
+    "agence": "Angers",
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/default.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/default.webp"
   },
   {
     "nom": "JLAIEL",
     "prenom": "Islem",
     "poste": "Alternant ",
     "equipe": "Pôle Passe Partout ",
-    "agence": "Angers"
+    "agence": "Angers",
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/default.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/default.webp"
   },
   {
     "nom": "KOBAA",
     "prenom": "Marwen",
     "poste": "Développeur",
     "equipe": "Pôle Griffondor",
-    "agence": "Angers"
+    "agence": "Angers",
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/default.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/default.webp"
   },
   {
     "nom": "KULESIAK",
@@ -686,8 +730,8 @@
     "poste": "Chef de projet",
     "equipe": "Pôle Passe Partout ",
     "agence": "Angers",
-    "photo_pro": "https://trombi.6tmphp.fr/images/pro/KULESIAK-Laura.jpg",
-    "photo_fun": "https://trombi.6tmphp.fr/images/fun/KULESIAK-Laura.jpg"
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/KULESIAK-Laura.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/KULESIAK-Laura.webp"
   },
   {
     "nom": "LEBEL",
@@ -695,8 +739,8 @@
     "poste": "Lead Developpeur ",
     "equipe": "Pôle Griffondor",
     "agence": "Angers",
-    "photo_pro": "https://trombi.6tmphp.fr/images/pro/LEBEL-Jeremy.jpg",
-    "photo_fun": "https://trombi.6tmphp.fr/images/fun/LEBEL-Jeremy.jpg"
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/LEBEL-Jeremy.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/LEBEL-Jeremy.webp"
   },
   {
     "nom": "LEMAITRE ",
@@ -704,8 +748,8 @@
     "poste": "Chef de projet",
     "equipe": "Pôle Griffondor",
     "agence": "Angers",
-    "photo_pro": "https://trombi.6tmphp.fr/images/pro/LEMAITRE-Mathieu.jpg",
-    "photo_fun": "https://trombi.6tmphp.fr/images/fun/LEMAITRE-Mathieu.jpg"
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/LEMAITRE-Mathieu.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/LEMAITRE-Mathieu.webp"
   },
   {
     "nom": "MAISONNEUVE ",
@@ -713,8 +757,8 @@
     "poste": "Directeur artistique",
     "equipe": "Studio Design",
     "agence": "Angers",
-    "photo_pro": "https://trombi.6tmphp.fr/images/pro/MAISONNEUVE-Emmanuel.jpg",
-    "photo_fun": "https://trombi.6tmphp.fr/images/fun/MAISONNEUVE-Emmanuel.jpg"
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/MAISONNEUVE-Emmanuel.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/MAISONNEUVE-Emmanuel.webp"
   },
   {
     "nom": "MOREAU ",
@@ -722,8 +766,8 @@
     "poste": "Développeur",
     "equipe": "Pôle Passe Partout ",
     "agence": "Angers",
-    "photo_pro": "https://trombi.6tmphp.fr/images/pro/MOREAU-Maxime.jpg",
-    "photo_fun": "https://trombi.6tmphp.fr/images/fun/MOREAU-Maxime.jpg"
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/MOREAU-Maxime.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/MOREAU-Maxime.webp"
   },
   {
     "nom": "OBLE ",
@@ -731,8 +775,8 @@
     "poste": "Développeur Junior ",
     "equipe": "Pôle Griffondor",
     "agence": "Angers",
-    "photo_pro": "https://trombi.6tmphp.fr/images/pro/OBLE-Maxime.jpg",
-    "photo_fun": "https://trombi.6tmphp.fr/images/fun/OBLE-Maxime.jpg"
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/OBLE-Maxime.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/OBLE-Maxime.webp"
   },
   {
     "nom": "PEAN ",
@@ -740,56 +784,70 @@
     "poste": "Responsable d'équipe",
     "equipe": "Pôle Griffondor",
     "agence": "Angers",
-    "photo_pro": "https://trombi.6tmphp.fr/images/pro/PEAN-Emilien.jpg",
-    "photo_fun": "https://trombi.6tmphp.fr/images/fun/PEAN-Emilien.jpg"
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/PEAN-Emilien.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/PEAN-Emilien.webp"
   },
   {
     "nom": "BENSI",
     "prenom": "Louis",
     "poste": "Développeur Front ",
     "equipe": "Studio Design",
-    "agence": "Rennes"
+    "agence": "Rennes",
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/default.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/default.webp"
   },
   {
     "nom": "DOLLO",
     "prenom": "Vincent",
     "poste": "Développeur Mobile",
     "equipe": "Team Dev",
-    "agence": "Rennes"
+    "agence": "Rennes",
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/default.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/default.webp"
   },
   {
     "nom": "LANSONNEUR",
     "prenom": "Thomas",
     "poste": "UX/UI Designer ",
     "equipe": "Studio Design",
-    "agence": "Rennes"
+    "agence": "Rennes",
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/default.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/default.webp"
   },
   {
     "nom": "LE GOFF ",
     "prenom": "Jean-Marie",
     "poste": "Coordinateur de projets ",
     "equipe": "Team Dev",
-    "agence": "Rennes"
+    "agence": "Rennes",
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/default.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/default.webp"
   },
   {
     "nom": "LE MEE ",
     "prenom": "Antonin",
     "poste": "Développeur",
     "equipe": "Team Dev",
-    "agence": "Rennes"
+    "agence": "Rennes",
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/default.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/default.webp"
   },
   {
     "nom": "SACHET",
     "prenom": "Mathieu",
     "poste": "Lead Developpeur ",
     "equipe": "Team Dev",
-    "agence": "Rennes"
+    "agence": "Rennes",
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/default.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/default.webp"
   },
   {
     "nom": "TAILLAND ",
     "prenom": "Gaelle",
     "poste": "Cheffe de projet",
     "equipe": "Team Dev",
-    "agence": "Rennes"
+    "agence": "Rennes",
+    "photo_pro": "https://127.0.0.1:8000/photo/pro/default.webp",
+    "photo_fun": "https://127.0.0.1:8000/photo/fun/default.webp"
   }
 ]
