@@ -1,6 +1,40 @@
 import {TextEditor} from "../components/textEditor"
 import {APIReq} from "../components/apirequest";
 import {useEffect, useState} from "react";
+import "./employee.css"
+
+const EmployeeShow = ({employee}) => {
+  const [hovered, setHovered] = useState(false);
+
+  function onMouseEnter() {
+    setHovered(true);
+  }
+
+  function onMouseLeave() {
+    setHovered(false);
+  }
+
+  return (
+    <div
+        key={employee.id}
+        className={`image-wrapper ${hovered ? 'hovered' : ''}`}
+        onMouseEnter={onMouseEnter}
+        onMouseLeave={onMouseLeave}
+    >
+        <img
+            src={hovered ? employee.photo_fun : employee.photo_pro}
+            alt={hovered ? "Fun image" : "Professional image"}
+        />
+        {hovered && (
+            <div className="overlay">
+                <div className="overlay-content">
+                    <p>{employee.prenom} {employee.nom}</p>
+                </div>
+            </div>
+        )}
+    </div>
+  )
+}
 
 export const EmployeeEditor = () => {
   const [error, setError] = useState("");
@@ -148,6 +182,8 @@ export const EmployeeEditor = () => {
         .catch((err) => console.error(err))
     }
 
+    // Handle apercu
+    const [apercu, setApercu] = useState(false)
 
   return (
     <div className={"container"}>
@@ -161,6 +197,8 @@ export const EmployeeEditor = () => {
           </form>
         </div>
       )}
+      {!apercu && <button type={"button"} className={"btn btn-primary"} onClick={() => setApercu(true)}>Aperçu</button>}
+      {apercu && <button type={"button"} className={"btn btn-primary"} onClick={() => setApercu(false)}><s>Aperçu</s></button>}
       <table className={"table"}>
         <thead>
           <tr>
@@ -172,6 +210,7 @@ export const EmployeeEditor = () => {
             <th scope={"col"} onClick={() => handleSort("photo_pro")}>photo principale</th>
             <th scope={"col"} onClick={() => handleSort("photo_fun")}>photo alternative</th>
             <th scope={"col"}>Action </th>
+            {apercu && <th scope={"col"} >Apperçu</th>}
           </tr>
         </thead>
         <tbody>
@@ -223,6 +262,11 @@ export const EmployeeEditor = () => {
               <td>
                 <button type={"button"} className={"btn btn-danger"} onClick={() => handleDelete(Employee.id)}>Supprimer</button>
               </td>
+              {apercu && (
+              <td>
+                <EmployeeShow employee={Employee}/>
+              </td>
+              )}
             </tr>
           ))}
         </tbody>
