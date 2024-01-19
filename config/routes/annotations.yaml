@@ -40,4 +40,4 @@ api_add_image:
 api_update_employee_all:
   path: '/api/update-employee/{id}'
   controller: App\Controller\ApiEmployeePOSTController::updateEmployee
-  methods: ['GET']
+  methods: ['PUT']

@@ -225,7 +225,7 @@ class ApiEmployeePOSTController extends AbstractController
     }
 
     /**
-     * @Route("/api/update-employee/{id}", name="api_update_employee", methods={"GET"})
+     * @Route("/api/update-employee/{id}", name="api_update_employee", methods={"PUT"})
      */
     public function updateEmployee(Request $request, $id)
     {
