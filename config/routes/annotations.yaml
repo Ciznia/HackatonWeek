@@ -37,3 +37,7 @@ api_add_image:
   path: '/api/add-image'
   controller: App\Controller\ApiEmployeePOSTController::traiterImage
   methods: ['GET']
+api_update_employee_all:
+  path: '/api/update-employee/{id}'
+  controller: App\Controller\ApiEmployeePOSTController::updateEmployee
+  methods: ['GET']

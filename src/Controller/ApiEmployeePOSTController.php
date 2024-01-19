@@ -223,4 +223,39 @@ class ApiEmployeePOSTController extends AbstractController
             return new Response(json_encode($data), Response::HTTP_INTERNAL_SERVER_ERROR);
         }
     }
+
+    /**
+     * @Route("/api/update-employee/{id}", name="api_update_employee", methods={"GET"})
+     */
+    public function updateEmployee(Request $request, $id)
+    {
+        // Récupérer l'employé à mettre à jour
+        $employee = $this->entityManager->getRepository(Photo::class)->findOneBy(['id' => $id]);
+        if (!$employee) {
+            throw $this->createNotFoundException('Employee not found');
+        }
+
+        // Récupérer les nouvelles valeurs depuis le formulaire
+        $newValueName = $request->query->get('nom');
+        $newValueFirstname = $request->query->get('prenom');
+        $newValuePoste = $request->query->get('poste');
+        $newValueEquipe = $request->query->get('equipe');
+        $newValueAgence = $request->query->get('agence');
+        $newValuePhotoPro = $request->query->get('photo_pro');
+        $newValuePhotoFun = $request->query->get('photo_fun');
+
+        // Mettre à jour l'entité avec la nouvelle valeur
+        $employee->setNom($newValueName);
+        $employee->setPrenom($newValueFirstname);
+        $employee->setPoste($newValuePoste);
+        $employee->setEquipe($newValueEquipe);
+        $employee->setAgence($newValueAgence);
+        $employee->setPhotoPro($newValuePhotoPro);
+        $employee->setPhotoFun($newValuePhotoFun);
+
+        // Enregistrer les changements dans la base de données
+        $this->entityManager->flush();
+
+        return new JsonResponse(['message' => 'Employee record updated successfully.']);
+    }
 }
