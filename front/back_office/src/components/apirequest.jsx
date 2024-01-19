@@ -1,6 +1,6 @@
 class ApiClient {
   constructor() {
-    this.serverUrl = ``;
+    this.serverUrl = `http://127.0.0.1:8000`;
   }
   
   async _internal(APIUrl, method, body = null, content_type = null) {

@@ -2,86 +2,6 @@ import {TextEditor} from "../components/textEditor"
 import {APIReq} from "../components/apirequest";
 import {useEffect, useState} from "react";
 
-export const AddEmployee = () => {
-    const [text, setText] = useState("");
-
-    const defaultValue = "Nom : <br>Prénom : <br>Equipe : <br>Agence :";
-
-    return (
-        <div>
-            Employee :
-            <TextEditor defaultValue={defaultValue} OnChange={setText}/>
-        </div>
-    )
-}
-
-
-export const HandleNewPageForm = () => {
-  const [message, setMessage] = useState("");
-  const [formBody, setFormBody] = useState({
-    pro: null,
-    fun: null,
-    text: ""
-  });
-
-  const handleChange = (e) => {
-    const {name, value} = e.target;
-    
-    setFormBody({
-      ...formBody,
-      [name]: value,
-    });
-  }
-  
-  const handleSubmit = (e) => {
-    e.preventDefault() 
-    
-    APIReq.json("http://127.0.0.1:8000/pages/create", "POST", formBody)
-      .then(() => {
-        const timeOut = setTimeout(() => {
-          window.location.href = "/admin/pageEditor/";
-        }, 2000);
-        
-        return () => clearTimeout(timeOut);
-      })
-      .catch((err) => {
-        if (err.message.includes("KO")) {
-          const timeOut = setTimeout(() => {
-            setMessage("");
-          }, 5000);
-          setMessage(err.message);
-          
-          return () => clearTimeout(timeOut);
-        }
-        console.error(err);
-      });
-  }
-  
-  return (
-    <div className={"container"}>
-      <h1>Créer un nouvel employé</h1>
-      <form onSubmit={handleSubmit}>
-        <div className="mb-3">
-          <label htmlFor="pro" className="form-label">Photo pro</label>
-          <input type="file" className="form-control" id="pro" name="pro" onChange={handleChange} />
-        </div>
-        <div className="mb-3">
-          <label htmlFor="fun" className="form-label">Photo fun</label>
-          <input type="file" className="form-control" id="fun" name="fun" onChange={handleChange} />
-        </div>
-        <div className="mb-3">
-          <label htmlFor="text" className="form-label">Information</label>
-          <input type="text" className="form-control" id="page_position" name={"page_position"} onChange={handleChange} value={formBody.page_position} />
-        </div>
-        <button type="submit" className="btn btn-primary">Créer</button>
-      </form>
-      <div className="alert alert-danger" role="alert" hidden={message === ""}>
-        {message}
-      </div>
-    </div>
-  );
-}
-
 export const EmployeeEditor = () => {
   const [error, setError] = useState("");
 
@@ -89,7 +9,7 @@ export const EmployeeEditor = () => {
   const [EmployeeList, setEmployeeList] = useState([]);
   
   useEffect(() => {
-    APIReq.withoutBody("http://127.0.0.1:8000/api/employees", "GET")
+    APIReq.withoutBody("/api/employees", "GET")
       .then((res) => {
         setEmployeeList(res.data);
       })
@@ -99,10 +19,10 @@ export const EmployeeEditor = () => {
   }, []);
   
   const handleDelete = (id) => {
-    if (!window.confirm("Êtes-vous sûr de vouloir supprimer cette page ?"))
+    if (!window.confirm("Êtes-vous sûr de vouloir supprimer cet employé ?"))
       return;
     
-    APIReq.withoutBody(`/pages/delete/${id}`, "DELETE")
+    APIReq.withoutBody(`/api/delete-employee/${id}`, "DELETE")
       .then(() => {
         setEmployeeList(EmployeeList.filter((page) => page.page.id !== id));
       })
@@ -121,27 +41,29 @@ export const EmployeeEditor = () => {
 
   let UpdatePage = [];
   
-  const handleChange = (e, page, action) => {
+  const handleChange = (e, Employee, action) => {
     e.preventDefault()
-    let thisPage = EmployeeList.filter((p) => p.page.id === page.page.id);
+    let thisPage = EmployeeList.filter((em) => em.id === Employee.id);
     if (!thisPage?.length)
       return
     thisPage = thisPage[0]
     if (action === "nom")
-      thisPage.firstName = e.target.innerText;
+      thisPage.nom = e.target.innerText;
     else if (action === "prénom")
-      thisPage.lastName = e.target.innerText;
+      thisPage.prenom = e.target.innerText;
     else if (action === "équipe")
-      thisPage.team = e.target.innerText;
-    else
+      thisPage.equipe = e.target.innerText;
+    else if (action === "agence")
       thisPage.agence = e.target.innerText;
+    else
+      thisPage.poste = e.target.innerText
     
-    const isPresent = UpdatePage.filter((p) => p.page.id === page.page.id);
+    const isPresent = UpdatePage.filter((p) => p.id === Employee.id);
     if (isPresent.length === 0)
       UpdatePage.push(thisPage)
     else
       UpdatePage = UpdatePage.map((p) => {
-        if (p.page.id === page.page.id)
+        if (p.id === Employee.id)
           p = thisPage
         return p
       })
@@ -149,16 +71,21 @@ export const EmployeeEditor = () => {
   
   const handleSave = (e) => {
     e.preventDefault()
+    console.log(UpdatePage)
     if (!UpdatePage.length)
       return
     UpdatePage.forEach((Employee) => {
       const body = {
-        firstName: Employee.firstName,
-        lastName: Employee.lastName,
-        team: Employee.équipe,
+        prenom: Employee.prenom,
+        nom: Employee.nom,
+        equipe: Employee.equipe,
         agence: Employee.agence,
+        poste: Employee.poste,
+        photo_fun: Employee.photo_fun,
+        photo_pro: Employee.photo_pro
       }
-        APIReq.json(`/pages/update/${Employee.id}`, "PUT", body)
+      console.log(body)
+        APIReq.json(`/api/update-employee/${Employee.id}`, "PUT", body)
             .then((res) => {
             setEmployeeList(prevState => {
                 return prevState.map((e) => {
@@ -178,6 +105,7 @@ export const EmployeeEditor = () => {
                 
                 return () => clearTimeout(timeOut);
             }
+            console.error(err);
             });
     });
   }
@@ -197,21 +125,53 @@ export const EmployeeEditor = () => {
     }
 
     /* Handle new Employee */
+    const [displayNew, setDisplayNew] = useState(false);
+    const [text, setText] = useState("");
 
+    const defaultValue = "nom : <br>prenom : <br>equipe : <br>agence : <br> poste : <br> lien photo_pro : <br> lien photo_fun :";
 
+    const handleSubmit = (e) => {
+      e.preventDefault();
+      const form = new FormData();
+
+      const data = text.split("<br>").map((a) => a.trim().split(":").map((b) => b.trim()));
+      /* Remove html tag used needed within the text editor */
+      data[0][0] = data[0][0].slice(3);
+      data[5][0] = data[5][0].slice(5);
+      data[6][0] = data[6][0].slice(5);
+      data[6][1] = data[6][1].slice(0, -4);
+      console.info(data);
+      data.map((a) => form.set(a[0], a[1]));
+
+      APIReq.autoType('/api/add-employee', "POST", form)
+        .then((res) => console.log(res))
+        .catch((err) => console.error(err))
+    }
 
 
   return (
     <div className={"container"}>
       <h1>Editeur d'équipe</h1>
-      <button type={"button"} className={"btn btn-primary"} onClick={() => window.location.href = "/admin/pageEditor/new"}>Rajouter un employé</button>
+      {!displayNew && <button type={"button"} className={"btn btn-primary"} onClick={() => setDisplayNew(true)}>Rajouter un employé</button>}
+      {displayNew && <button type={"button"} className={"btn btn-primary"} onClick={() => setDisplayNew(false)}>Annuler</button>}
+      {displayNew && (
+        <div>
+          <form onSubmit={handleSubmit}>
+            <TextEditor defaultValue={defaultValue} OnChange={setText}/>
+          </form>
+        </div>
+      )}
       <table className={"table"}>
         <thead>
           <tr>
             <th scope={"col"} onClick={() => handleSort("nom")}>nom</th>
-            <th scope={"col"} onClick={() => handleSort("prénom")}>prénom</th>
-            <th scope={"col"} onClick={() => handleSort("équipe")}>équipe</th>
+            <th scope={"col"} onClick={() => handleSort("prenom")}>prénom</th>
+            <th scope={"col"} onClick={() => handleSort("equipe")}>équipe</th>
             <th scope={"col"} onClick={() => handleSort("agence")}>agence</th>
+            <th scope={"col"} onClick={() => handleSort("poste")}>poste</th>
+            <th scope={"col"} onClick={() => handleSort("photo_pro")}>photo principale</th>
+            <th scope={"col"} onClick={() => handleSort("photo_fun")}>photo alternative</th>
+            <th scope={"col"}>Action </th>
           </tr>
         </thead>
         <tbody>
@@ -228,26 +188,40 @@ export const EmployeeEditor = () => {
               <td
                 contentEditable={true}
                 onInput={(e) => handleChange(e, Employee, "nom")}
-                dangerouslySetInnerHTML={{ __html: Employee.lastName }}
+                dangerouslySetInnerHTML={{ __html: Employee.nom }}
               />
              <td
                 contentEditable={true}
                 onInput={(e) => handleChange(e, Employee, "prénom")}
-                dangerouslySetInnerHTML={{ __html: Employee.firstName }}
+                dangerouslySetInnerHTML={{ __html: Employee.prenom }}
               />
               <td
                 contentEditable={true}
                 onInput={(e) => handleChange(e, Employee, "équipe")}
-                dangerouslySetInnerHTML={{ __html: Employee.team }}
+                dangerouslySetInnerHTML={{ __html: Employee.equipe }}
               />
               <td
                 contentEditable={true}
                 onInput={(e) => handleChange(e, Employee, "agence")}
                 dangerouslySetInnerHTML={{ __html: Employee.agence }}
               />
+              <td
+                contentEditable={true}
+                onInput={(e) => handleChange(e, Employee, "poste")}
+                dangerouslySetInnerHTML={{ __html: Employee.poste }}
+              />
+              <td
+                contentEditable={true}
+                onInput={(e) => handleChange(e, Employee, "photo_fun")}
+                dangerouslySetInnerHTML={{ __html: Employee.photo_fun }}
+              />
+              <td
+                contentEditable={true}
+                onInput={(e) => handleChange(e, Employee, "photo_pro")}
+                dangerouslySetInnerHTML={{ __html: Employee.photo_pro }}
+              />
               <td>
-                <button type={"button"} className={"btn btn-primary"} onClick={() => window.location.href = "/" + Employee.id}>Modifier</button>
-                <button type={"button"} className={"btn btn-danger"} onClick={() => handleDelete(Employee.Employee.id)}>Supprimer</button>
+                <button type={"button"} className={"btn btn-danger"} onClick={() => handleDelete(Employee.id)}>Supprimer</button>
               </td>
             </tr>
           ))}

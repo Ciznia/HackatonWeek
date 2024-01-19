@@ -41,3 +41,8 @@ api_update_employee_all:
   path: '/api/update-employee/{id}'
   controller: App\Controller\ApiEmployeePOSTController::updateEmployee
   methods: ['PUT']
+api_delete_employee:
+  path: '/api/delete-employee/{id}'
+  controller: App\Controller\ApiEmployeeDELETEController::deleteEmployee
+  methods: ['DELETE']
+
